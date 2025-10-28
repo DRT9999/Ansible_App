@@ -1,0 +1,15 @@
+- name: Delete a file
+  ansible.builtin.file:
+    path: "{{APP_PATH}}"
+    state: absent
+
+- name: Create a directory
+  ansible.builtin.file:
+    path: "{{APP_PATH}}"
+    state: directory
+
+- name: Dowloading file and Extracting remote server
+  ansible.builtin.unarchive:
+    src: https://expense-web-app.s3.amazonaws.com/{{COMP}}.zip 
+    dest: "{{APP_PATH}}"              # Remote directory
+    remote_src: yes  

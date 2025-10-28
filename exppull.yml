@@ -1,0 +1,7 @@
+- name: Configuging Expense App
+  become: true
+  hosts: localhost
+  roles:
+    - role: "{{COMP}}"
+
+ 

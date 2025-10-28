@@ -1,0 +1,8 @@
+[frontend]
+frontend-qa.exp.in
+
+[mysql]
+mysql-qa.exp.in
+
+[backend]
+backend-qa.exp.in
