@@ -4,8 +4,8 @@
 # mysql_secure_installation --set-root-pass ExpenseApp@1
 # echo "** Mysql Installation Completed **"
 
-- name: Set Hostname to {{COMP}}-{{env}}
-  ansible.builtin.shell: set-hostname {{COMP}}-{{env}}
+#- name: Set Hostname to {{COMP}}-{{env}}
+  #ansible.builtin.shell: set-hostname {{COMP}}-{{env}}
 
 - name: Install MySQL Server
   ansible.builtin.package:

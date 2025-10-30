@@ -17,8 +17,8 @@
 # systemctl enable backend 
 # systemctl start backend 
 
-- name: Set Hostname to {{COMP}}-{{env}}
-  ansible.builtin.shell: set-hostname {{COMP}}-{{env}}
+#- name: Set Hostname to {{COMP}}-{{env}}
+ # ansible.builtin.shell: set-hostname {{COMP}}-{{env}}
 
 - name: Disable of nodejs
   ansible.builtin.shell: dnf module disable nodejs -y
